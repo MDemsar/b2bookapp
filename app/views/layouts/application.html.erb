@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>B2book</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">B2book</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+        <li><%= link_to "Začetna stran" %></li>
+        <li><%= link_to "Moj profil" %></li>
+        <li><%= link_to "Moje skupine" %></li>
+        <li><%= link_to "Moji prijatelji" %></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="span9"><%= yield %></div>
+    <div class="span3"><h2>Dobrodošli!</h2>Pozdravljeni v socialnem omrežju B2book. Zaradi priročnosti se lahko prijavite z obstoječim Facebook računom.</div>
+  </div>
+</div>
+</body>
+</html>
